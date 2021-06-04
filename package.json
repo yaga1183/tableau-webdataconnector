@@ -10,6 +10,7 @@
     "lint:fix": "eslint ./Simulator --ext .js --ext .jsx --fix --cache",
     "start": "node node_modules/npm-run-all/bin/npm-run-all --parallel corsproxy http-server",
     "start:bundle": "node node_modules/npm-run-all/bin/npm-run-all --parallel corsproxy http-server bundle",
+    "prestart": "node ./scripts/preStart.js",
     "end-to-end": "node_modules/.bin/mocha --compilers js:babel-core/register --recursive ./Simulator/tests/end-to-end",
     "unit": "node_modules/.bin/mocha --compilers js:babel-core/register --recursive  Simulator/tests/unit",
     "unit:coverage": "node_modules/.bin/nyc --check-coverage --lines 70 --functions 70 --branch 70 npm run unit",

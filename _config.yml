@@ -20,3 +20,5 @@ kramdown:
 
 # Exclude
 exclude: ['node_modules', 'vendor']
+
+theme: jekyll-theme-leap-day
